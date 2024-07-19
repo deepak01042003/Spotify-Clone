@@ -1,0 +1,530 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: #000;
+    width: 330px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content{
+    background-color: #1c1c1c;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    margin-right: 0.5rem;
+    margin-top: 0.7rem;
+    padding: 0 0.7rem;
+    padding-bottom: 5rem;
+}
+
+.music-player{
+    display: flex;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    bottom: 0;
+}
+
+.navbar{
+    background-color: #121212;
+    width: 280px;
+    height: 100px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    margin: 0.8rem 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-option{
+    line-height: 3rem;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+    margin: 0 0.5rem;
+}
+
+.nav-option a{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.one{
+    color: #b3b3b3;
+}
+
+.one:hover{
+    color: white;
+}
+
+.library{
+    background-color: #121212;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 8px 12px 8px 12px;
+}
+
+.library-top{
+    padding-top: 0.8rem;
+}
+
+.library-top img{
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0.5rem;
+    opacity: 0.5;
+}
+
+.library-top a{
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.5;
+    margin-right: 4.7rem;
+}
+
+.library-top i{
+    font-size: 1rem;
+    opacity: 0.5;
+    margin-right: 1rem;
+}
+
+.library{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.library-top img:hover, a:hover,i:hover{
+    opacity: 1;
+}
+
+.onelib{
+    height: 120px;
+    width: 260px ;
+}
+
+.twolib{
+    height: 180px;
+    width: 260px;
+}
+
+.lib-bottom-box{
+    padding: 0.5rem 0.8rem;
+    background-color: #242424;
+    border-radius: 1rem;
+    margin-top: 0.8rem;
+}
+
+.library-bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.onelib-para-one{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.onelib-para-two{
+    font-size: 0.8rem;
+}
+
+.lib-button-one{
+    background-color: white;
+    color: black;
+    border: 0;
+    border-radius: 1rem;
+    width: 120px;
+    height: 30px;
+}
+
+.lib-button-one:hover{
+    transform: scale(1.1);
+}
+
+.lib-button-two{
+    background-color: white;
+    color: black;
+    border: 0;
+    border-radius: 1rem;
+    width: 130px;
+    height: 30px;
+}
+
+.lib-button-two:hover{
+    transform: scale(1.1);
+}
+
+.twolib-para-one{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.twolib-para-two{
+    font-size: 0.8rem;
+}
+
+.main-nav{
+    height: 64px;
+    position: sticky;
+    top: 0;
+    background-color: #1c1c1c;
+    z-index: 2;
+}
+
+.main-nav-icon{
+    height: 28px;
+    width: 28px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+}
+
+.main-nav-one{
+    display: flex;
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back{
+    opacity: 0.5;
+    background-image: url("Spotify_Images/backward_icon.png");
+    background-size: cover;
+}
+
+.forw{
+    background-image:url("Spotify_Images/forward_icon.png") ;
+    background-size: cover;
+}
+
+.main-nav-btn{
+    border: none;
+    border-radius: 1rem;
+}
+
+.one-btn{
+    width: 130px;
+    height: 32px;
+    background-color: white;
+}
+
+.two-btn{
+    width: 110px;
+    height: 32px;
+    color: white;
+    background-color: #000;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.main-nav-two{
+    display: flex;
+    align-items: center;
+}
+
+.login{
+    margin-right:0.7rem ;
+}
+
+.login i,.bell i{
+    opacity: 0.5;
+    margin-top: 0.3rem;
+    margin-left: 0.4rem;
+}
+
+.one-btn:hover,.two-btn:hover{
+    transform: scale(1.05);
+}
+
+.login i:hover , .bell i:hover{
+    opacity: 1;
+}
+
+@media(max-width : 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.buttons{
+    margin-top: 10px;
+}
+
+.main-buttons{
+    margin-right: 0.7rem;
+    border: none;
+    border-radius: 1rem;
+    height: 28px;
+    font-weight: 700;
+}
+
+.buttons-one{
+    width: 35px;
+    background-color: white;
+}
+
+.buttons-two{
+    width: 65px;
+    color: white;
+    background-color: #ffffff12;
+}
+
+.buttons-three{
+    width: 80px;
+    color: white;
+    background-color: #ffffff12;
+}
+
+.card-line{
+    display: flex;
+}
+
+.card{
+    margin-right: 1rem;
+    padding: 0.5rem;
+    background-color: #242424;
+    width: 200px;
+    height: 300px;
+    line-height: 20px;
+    border-radius: 0.5rem;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.card:hover{
+    background-color: rgba(36,36,36,0.5)
+}
+
+.footer-one{
+    display: flex;
+}
+
+.footer-one-content{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    line-height: 25px;
+    margin-right: 70px;
+}
+
+.footer-head{
+    font-weight: 700;
+    margin: 0;
+}
+
+.footer-info{
+    opacity: 0.7;
+    margin: 0;
+}
+
+.footer-one-icons i{
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.footer-line{
+    margin: 2rem 0;
+    width: 100%;
+    border-top: 1.5px solid #242424 ;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 1rem;
+}
+
+.album{
+    width: 25%;
+    padding: 0.5rem;
+    display: flex;
+}
+
+.player{
+    width: 50%;
+}
+
+.controls{
+    width: 25%;
+}
+
+.album img{
+    width: 56px;
+    height: 56px;
+    border-radius: 0.3rem;
+}
+
+.album-song{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.album-singer{
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.album-para{
+    padding-left: 0.6rem;
+    line-height: 0.6rem;
+}
+
+.album-singer:hover , .album-song:hover{
+    text-decoration: underline;
+}
+
+.album-singer:hover{
+    opacity: 1;
+}
+
+.album-icon img{
+    position: relative;
+    top: 30%;
+    padding-right: 0.1rem;
+}
+
+.album-icon{
+    padding-left: 0.6rem;
+}
+
+.album-icon-one{
+    height: 20px;
+    width: 20px;
+}
+
+.album-icon-two{
+    height: 24px;
+    width: 24px;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-icon{
+    position: relative;
+    bottom: 5px;
+}
+
+.player-side-icon{
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0.75rem;
+    opacity: 0.7;
+}
+
+.player-center-icon{
+    margin: 0 0.75rem;
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    top: 8px;
+}
+
+.time{
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.bar{
+    width: 400px;
+    height: 5px;
+    appearance: none;
+    border-radius: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #242424;
+}
+
+.bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+}
+
+.player-side-icon:hover{
+    opacity: 1;
+}
+
+.player-center-icon:hover{
+    transform: scale(1.1);
+}
+
+.controls{
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+}
+
+.controls-all-icons{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0 0.3rem;
+    position: relative;
+    top: 20px;
+}
+
+.controls-all-excp-icons{
+    margin: 0 0.3rem;
+    height: 1rem;
+    width: 1rem;
+    position: relative;
+    top: 15px;
+}
+
+.controls-bar{
+    width: 80px;
+    height: 5px;
+    appearance: none;
+    border-radius: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #fff;
+    position: relative;
+    top: 20px;
+}
+
+.controls-bar::-webkit-slider-thumb{
+    appearance: none;
+}
